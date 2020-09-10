@@ -1,7 +1,18 @@
     <!DOCTYPE html>  
     <html lang = "en">  
-       <head><title>Home</title></head>  
-       <body>  
+       <head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 20px;
+}
+</style>
+       <title>Home</title>
+       </head>  
+       <body style="background-color:powderblue; text-align:center;">  
           <h3>  
              <a href = "{{ url_for('list_employees') }}">Employee Management System</a>  
           </h3>  
@@ -12,7 +23,7 @@
           {%- endfor %}  
               
           <h3>Employees List</h3>  
-          <table border="2" padding = "5">  
+           <table style="border:1px solid black;margin-left:auto;margin-right:auto;padding:5px">
              <thead>  
                 <tr>  
                    <th>Name</th>  

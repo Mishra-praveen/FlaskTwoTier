@@ -6,7 +6,7 @@ user = os.getenv('USERNAME')
 code = os.getenv('PASSWORD')
 link = os.getenv('URL')
 
-connection = 'mysql+pymysql://{0}:{1}@{2}:3309/Employees'.format(user, code, link)
+connection = 'mysql+pymysql://{0}:{1}@{2}:3306/Employees'.format(user, code, link)
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = connection
 app.config['SECRET_KEY'] = "secret key"
